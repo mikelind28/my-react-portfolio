@@ -1,0 +1,332 @@
+* {
+    color: rgb(0, 30, 0);
+}
+
+/* header */
+
+header {
+    min-height: 60px;
+    margin-bottom: 20px;
+    background-color: rgb(202, 224, 162);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(35, 50, 40, 0.4);
+}
+
+header nav {
+    padding: 10px;
+    margin-left: 30%;
+    display: flex;
+    column-gap: 10%;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+}
+
+header h1 {
+    text-align: right;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+header ul {
+    padding: 10px;
+    display: flex;
+    column-gap: 10%;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+}
+
+header li {
+    text-wrap: nowrap;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* main */
+
+main {
+    margin: 10px;
+}
+
+/* <hr> */
+
+hr {
+    max-width: 600px;
+    min-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.5px solid rgba(0, 30, 0, 0.25);
+}
+
+/* body */
+
+body {
+    background-color: rgb(189, 216, 140);
+}
+
+/* about me */
+
+#about-me {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#about-me p {
+    max-width: 400px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+#about-me p::first-letter {
+    font-size: 125%;
+    font-weight: bolder;
+}
+
+#avatar {
+    width: 300px;
+    height: 100%;
+    margin: 10px;
+    border-radius: 30px;
+    position: sticky;
+    top: 0px;
+}
+
+/* my portfolio */
+
+#my-work {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#my-work img {
+    border-radius: 20px;
+}
+
+#my-work img:hover {
+    opacity: 50%;
+    box-shadow: inset 0px 5px 5px 5px rgba(35, 50, 40, 0.75);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgb(250, 250, 240);
+}
+
+.large-image {
+    max-height: 500px;
+}
+
+.large-image p {
+    height: 50px;
+    width: 200px;
+    bottom: 110px;
+    padding-left: 50px;
+    padding-top: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(250, 250, 240);
+    background-color: rgba(80, 90, 60, 0.75);
+}
+
+.large-image:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgb(250, 250, 240);
+}
+
+#app-1 {
+    max-width: 720px;
+    max-height: 480px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.small-image {
+    max-width: 740px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.small-image div:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgb(250, 250, 240);
+}
+
+#app-2, #app-3, #app-4, #app-5 {
+    width: 350px;
+    height: 230px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.small-image div {
+    width: 370px;
+    height: 250px;
+}
+
+.small-image p {
+    height: 30px;
+    width: 250px;
+    bottom: 75px;
+    padding-left: 50px;
+    padding-top: 7px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(250, 250, 240);
+    background-color: rgba(80, 90, 60, 0.75);
+}
+
+/* contact me */
+
+#contact-me {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    line-height: 1.2em;
+}
+
+#contact-me h3 {
+    width: 200px;
+    margin: 10px;
+    text-align: right;
+    font-weight: bolder;
+}
+
+#contact-me div {
+    width: 200px;
+    margin: 10px;
+    line-height: 1.4em;
+}
+
+#contact-me div div {
+    line-height: 2em;
+}
+
+/* footer */
+
+footer {
+    height: 100px;
+    background: linear-gradient(0deg, rgba(35, 50, 40, 0.4) 0%, rgba(240, 240 ,230 ,0.75) 75%);
+}
+
+/* media queries - when device is 740px or smaller */
+
+@media (max-width: 740px) {
+    header {
+        min-height: 60px;
+        margin-bottom: 20px;
+        background-color: rgb(202, 224, 162);
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 0px 10px rgba(35, 50, 40, 0.4);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-left: 0px;
+    }
+
+    header h1 {
+        text-align: center;
+        padding: 20px;
+        margin-left: 0px;
+    }
+
+    header ul {
+        padding: 10px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header li {
+        padding: 10px;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+
+    #about-me {
+        padding: 10px;
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #avatar {
+        position: static;
+    }
+
+    hr {
+        min-width: 75vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0.5px solid rgba(0, 30, 0, 0.25);
+    }
+
+    .large-image {
+        height: 250px;
+    }
+
+    #app-1 {
+        width: 350px;
+        height: 230px;
+    }
+
+    .large-image p {
+        height: 30px;
+        width: 250px;
+        bottom: 75px;
+        padding-left: 50px;
+        padding-top: 7px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: relative;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+        color: rgb(250, 250, 240);
+        background-color: rgba(80, 90, 60, 0.75);
+    }
+
+    #my-work {
+        display: flex;
+    }
+
+    #contact-me {
+        margin: 0px;
+        h3 {
+            width: 50%;
+        }
+        div {
+            width: 50%;
+        }
+    }
+}
