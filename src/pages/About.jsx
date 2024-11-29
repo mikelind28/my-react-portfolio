@@ -2,7 +2,8 @@ import profilePic from '../assets/images/frog.jpg'
 
 export default function About() {
     return (
-      <div>
+      <div className='mainCard'>
+        <h1>about me</h1>
         <section id="about-me">
             <img id="avatar" src={profilePic} alt="Mike Lind"/>
             <p>

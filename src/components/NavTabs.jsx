@@ -1,42 +1,54 @@
-import { Link, useLocation } from 'react-router';
+import { NavLink } from 'react-router';
 
 function NavTabs() {
-    const currentPage = useLocation().pathname;
 
     return (
         <nav>
             <ul>
                 <li>
-                    <Link
+                    <NavLink
                         to='/'
-                        className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+                        className={({ isActive }) => 
+                            isActive ? "active-link" : ""
+                        }
+                        id='about'
+                        end
                     >
-                        About
-                    </Link>
+                        about
+                    </NavLink>
                 </li>
                 <li>
-                    <Link
-                        to='/Portfolio'
-                        className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+                    <NavLink
+                        to='/portfolio'
+                        className={({ isActive }) =>
+                            isActive ? "active-link" : ""
+                        }
+                        id='portfolio'
                     >
-                        Portfolio
-                    </Link>
+                        portfolio
+                    </NavLink>
                 </li>
                 <li>
-                    <Link
-                        to='/Contact'
-                        className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+                    <NavLink
+                        to='/contact'
+                        className={({ isActive }) =>
+                            isActive ? "active-link" : ""
+                        }
+                        id='contact'
                     >
-                        Contact
-                    </Link>
+                        contact
+                    </NavLink>
                 </li>
                 <li>
-                    <Link
-                        to='/Resume'
-                        className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+                    <NavLink
+                        to='/resume'
+                        className={({ isActive }) =>
+                            isActive ? "active-link" : ""
+                        }
+                        id='resume'
                     >
-                        Resume
-                    </Link>
+                        resume
+                    </NavLink>
                 </li>
             </ul>
         </nav>

@@ -1,7 +1,7 @@
 export default function Resume() {
     return (
-      <div>
-        <h1>My Resume</h1>
+      <div className='mainCard'>
+        <h1>my resume</h1>
         <p>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
           Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
