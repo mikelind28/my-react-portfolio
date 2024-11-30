@@ -5,6 +5,7 @@ export default function Footer() {
     return (
         <footer>
             <nav>
+            <hr></hr>
             <ul>
                 <li>
                 <NavLink 
