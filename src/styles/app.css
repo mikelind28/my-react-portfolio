@@ -22,6 +22,22 @@ body > div {
     min-height: 100vh;
 }
 
+/* error page */
+
+#error-page {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+    line-height: 2em;
+}
+
+#error-page i {
+    font-size: 20px;
+    font-family: monospace;
+}
+
 /* header */
 
 header {
