@@ -12,6 +12,7 @@ export default function Footer() {
                 to="/"
                 className={({ isActive }) => isActive ? "footer-link-active" : "" }
                 id="about"
+                onClick={() => document.title="Mike Lind | About"}
                 end
                 >
                 about
@@ -23,6 +24,7 @@ export default function Footer() {
                 to="/portfolio"
                 className={({ isActive }) => isActive ? "footer-link-active" : "" }
                 id="portfolio"
+                onClick={() => document.title="Mike Lind | Portfolio"}
                 end
                 >
                 portfolio
@@ -34,6 +36,7 @@ export default function Footer() {
                 to="/contact"
                 className={({ isActive }) => isActive ? "footer-link-active" : "" }
                 id="contact"
+                onClick={() => document.title="Mike Lind | Contact"}
                 end
                 >
                 contact
@@ -45,6 +48,7 @@ export default function Footer() {
                 to="/resume"
                 className={({ isActive }) => isActive ? "footer-link-active" : "" }
                 id="resume"
+                onClick={() => document.title="Mike Lind | Resume"}
                 end
                 >
                 resume
