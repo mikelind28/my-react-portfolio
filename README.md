@@ -16,4 +16,4 @@ This site was built with [React](https://react.dev/), and deployed with [Netlify
 
 ## License
 
-This repository uses an [MIT License ↗️](./LICENSE).
+This repository uses an [MIT License ↗️](./LICENSE.txt).
