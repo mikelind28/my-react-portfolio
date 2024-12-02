@@ -240,7 +240,14 @@ main {
     flex: 1 1 auto;
 }
 
+#my-work > div {
+    box-shadow: inset 0px 3px 5px 3px rgba(0, 30, 0, 0.75);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
 #my-work img {
+    opacity: 65%;
     width: 100%;
     height: 100%;
     object-fit:cover;
@@ -330,10 +337,13 @@ main {
     position: relative;
     left: 0px;
     bottom: 20px;
-    background-color: rgba(85, 107, 47, 0.75);
+    background-color: rgba(85, 107, 47, 0.85);
     color: rgb(230, 255, 210);
+    font-weight: bolder;
     text-align: left;
     text-decoration: none;
+    border-bottom: 2px solid rgb(0, 30, 0);
+    border-right: 2px solid rgb(0, 30, 0);
 }
 
 #portfolio-links a:hover::after {
